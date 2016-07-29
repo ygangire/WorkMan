@@ -1,0 +1,49 @@
+     <div style="text-align:center"> <h4> Empleyee Details </h4> 
+	 <div class="alert alert-info" role="alert" id="messages" ng-show="message">{{message}}</div>	
+	 </div>  	
+                  <div class="div-border" style="padding-top:15px" >
+                       <div class="row">
+					      <form  class="form-horizontal" name="clientForm"  novalidate >
+                           <div class="col-md-12" >
+								 <div class="form-group">
+                                  <label class="col-md-4 control-label " for="empNumber"> Employee Number </label>
+                                  <div class="col-md-8 ">
+                                    <input type="text" class="form-control" id="empNumber" name="empNumber" ng-model="empData.empnum" placeholder="Enter Employee Number" required>
+								  </div>
+                                </div>
+								<div class="form-group">
+                                  <label class="col-md-4 control-label " for="titleId"> Title </label>
+                                  <div class="col-md-8 ">
+                                    <input type="text" class="form-control" id="titleId" name="titleId" ng-model="empData.titleId" placeholder="Enter Title " required>
+								  </div>
+                                </div>
+								<div class="form-group">
+                                  <label class="col-md-4 control-label " for="surname">Surname </label>
+                                  <div class="col-sm-8  ">
+                                    <input  type="text" class="form-control" id="surname" name="surname" ng-model="empData.surname" placeholder="Enter Surname" required>
+                                  </div>
+                                </div>
+                                 <div class="form-group">
+                                  <label class="col-md-4 control-label " for="firstname"> Firstname </label>
+                                  <div class="col-md-8 ">
+                                    <input type="text" class="form-control" id="firstname" name="firstname" ng-model="formData.firstname" placeholder="Enter Firstname" required>
+                                  </div>
+                                </div>
+                                
+                               <div class="form-group">
+                                  <label class="col-md-4 control-label " for="empDept">Department </label>
+                                  <div class="col-sm-8  ">
+                                    <input  type="text" class="form-control" id="empDept" name="empDept" ng-model="empData.empDept" placeholder="Enter Department" required>
+                                  </div>
+                                </div>
+                               <div class="form-group">        
+                                  <div class="col-md-offset-4 col-sm-8">
+                                    <button id="btnSubmit"  class="btn btn-primary btn-a-style pull-right" ng-click="newEmployee()" > 
+									    <span class="glyphicon glyphicon-ok-sign " ></span> &nbsp;Save 
+									</button>
+                                  </div>
+                                </div>
+                           </div> <!-- col-md-8 -->
+                           
+						   </form>
+   </div>

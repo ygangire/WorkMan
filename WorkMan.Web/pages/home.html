@@ -1,0 +1,58 @@
+    <div style="text-align:center"> <h5> Employee Details  </h5></div>
+	<div >
+            <div class="row" > 
+				<div class="col-md-12 items-header" style="margin-bottom:3px;">	
+				  <form class="form-inline">
+						<div class="form-actions">
+						  <div class="input-group">
+							<input type="text" class="form-control" ng-model="txtSearch"  id="txtSearch" name="txtSearch" > 
+							<div class="input-group-btn">
+								<button type="submit" class="btn btn-primary " ng-click="getEmployee(txtSearch);">
+									<span class="glyphicon glyphicon-search " ></span> &nbsp;Search
+								</button>
+							</div>
+						  </div>
+						  <a  class="btn btn-primary pull-right"  href="#Employee">
+									<span class="glyphicon glyphicon-plus-sign " ></span> &nbsp;New Employee
+								</a>
+					  </div>
+					  
+					</form>
+					
+				  </div>
+				</div>
+			<div class="row div-border" style="height:450px" >
+                <div class="col-md-12">
+                    <table class="table  table-hover" >
+                        <thead style="background-color:#B0C4DE" >
+                          <tr>
+						    <th>Employee No.</th>
+						    <th>Title</th>
+                            <th>Surname</th>
+							<th>Firstname</th>
+							<th>Department</th>
+							<th colspan=2> </th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr ng-repeat="l in Employees ">
+							<td>{{ l.emp_number }}</td>
+							<td>{{ l.emp_ttle }}</td>
+							<td>{{ l.emp_surname }}</td>
+							<td>{{ l.emp_firstname }}</td>
+							<td>{{ l.department }}</td>
+							<td> <a href="#UpdateEmployee{{x.emp_number}}" > 
+										<span class="glyphicon glyphicon-pencil " ></span> 
+								 </a> 
+							</td>
+							<td> <a href="#viewEmployee/{{x.emp_number}}"  > 
+										<span class="glyphicon glyphicon-open "  ></span> 
+								 </a>
+						    </td>
+						  </tr> 
+                        </tbody>
+                      </table>
+                </div>
+            </div>
+	</div>
+	
