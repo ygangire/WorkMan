@@ -11,12 +11,12 @@ var app = angular.module('empApp', ['ngRoute','ui.bootstrap'])
         $routeProvider
             // route for the home page
             .when('/', {
-                templateUrl : 'pages/home.html',
+                templateUrl : 'partials/home.html',
                 controller  : 'empCtl'
             })
             // route for the create new employee page
             .when('/Employee', {
-                templateUrl : 'pages/newEmployee.html',
+                templateUrl : 'partials/newEmployee.html',
                 controller  : 'empCtl'
             });
     });

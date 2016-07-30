@@ -101,8 +101,8 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="pages\home.html" />
-    <Content Include="pages\newEmployee.html" />
+    <Content Include="partials\home.html" />
+    <Content Include="partials\newEmployee.html" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
